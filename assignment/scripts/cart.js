@@ -10,11 +10,12 @@ var basket = [];
 // take an input parameter for a string `item`
 // add the new item to the global array `basket`. 
 // return `true` indicating the item was added 
-function addItem(item){
-console.log('in addItem:');
-    basket.push(item);
-return true;
-} // end addItem 
+
+function addItem(item) {
+  basket.push(item);
+  return true;
+}
+
 
 // Testing addItem
 console.log(`Basket is ${basket}`);
@@ -38,4 +39,15 @@ function listItems() {
 console.log(`Basket is ${basket}`);
 listItems();
 
+// Create a function called `empty`. It should:
+// reset the `basket` to an empty array
+function empty() {
+    console.log('in empty:');
+    basket = [];
+} // end empty 
+
+// Testing empty
+console.log(`Basket is ${basket}`);
+empty();
+console.log(`Basket is ${basket}`);
 
